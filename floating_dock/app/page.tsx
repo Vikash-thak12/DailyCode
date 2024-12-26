@@ -46,13 +46,26 @@ export default Homepage
 
 
 const FloatingDock = () => (
-  <div className='fixed bottom-20 mx-auto flex items-center gap-5'>
+  <div className='fixed bottom-20 mx-auto inset-x-0 flex items-center justify-center gap-5 bg-neutral-100 w-fit px-4 py-2 rounded-lg'>
     {
       navitems.map((item,idx) => (
-        <div key={idx}>
-          {item.title}
-        </div>
+        <IconContainer key={idx} item={item} />
       ))
     }
   </div>
 );
+
+interface Link {
+  title: string, 
+  icon: React.ReactNode, 
+  href: string
+}
+
+
+export const IconContainer = ({ item }: {item: Link}) => {
+  return (
+    <div>
+      {item.icon}
+    </div>
+  )
+}
