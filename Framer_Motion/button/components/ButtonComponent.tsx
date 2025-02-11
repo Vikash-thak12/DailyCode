@@ -11,11 +11,7 @@ const ButtonComponent = () => {
                 backgroundRepeat: "repeat",
             }}
         >
-            {/* <motion.div
-            // animate={{ rotate: 360, transition: { duration: 2}}}
-             className="w-40 h-40 bg-blue-500 rounded-lg mx-10" /> */}
             <motion.button
-                // animate={{ rotate: [0,60,0], transition: { duration: 2} }}
                 whileHover={{
                     rotateX: 25, 
                     rotateY: 10,
