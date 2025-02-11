@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import React from "react";
 
 const ButtonComponent = () => {
@@ -11,8 +11,11 @@ const ButtonComponent = () => {
                 backgroundRepeat: "repeat",
             }}
         >
+            <motion.div
+            // animate={{ rotate: 360, transition: { duration: 2}}}
+             className="w-40 h-40 bg-blue-500 rounded-lg mx-10" />
             <motion.button
-                animate={{ rotate: 120 }}
+                animate={{ rotate: 360, transition: { duration: 2} }}
                 className="text-neutral-400 text-3xl px-8 py-4 bg-gray-800 rounded-lg relative group"
             >
                 <span>Vikash Thakur</span>

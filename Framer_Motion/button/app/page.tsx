@@ -1,5 +1,5 @@
 'use client'
-// import ButtonComponent from '@/components/ButtonComponent'
+import ButtonComponent from '@/components/ButtonComponent'
 // import Content from '@/components/Content'
 import React from 'react'
 // import { motion, useScroll } from "motion/react"
@@ -8,7 +8,7 @@ const HomePage = () => {
   // const { scrollYProgress } = useScroll();
   return (
     <>
-      {/* <ButtonComponent /> */}
+      <ButtonComponent />
       {/* <motion.div
         id="scroll-indicator"
         style={{
