@@ -1,14 +1,26 @@
 'use client'
-import ButtonComponent from '@/components/ButtonComponent'
+// import ButtonComponent from '@/components/ButtonComponent'
 // import Content from '@/components/Content'
 import React from 'react'
+// import { motion } from 'motion/react'
+import Animation from '@/components/Animation'
 // import { motion, useScroll } from "motion/react"
 
 const HomePage = () => {
   // const { scrollYProgress } = useScroll();
   return (
-    <>
-      <ButtonComponent />
+    <div className='h-screen w-full flex items-center justify-center bg-black text-white'>
+    {/* <motion.div
+      // initial={{ transform: "translateX(-100px)" }}
+      // animate={{ transform: "translateX(0px)" }}
+      // transition={{ type: "spring", duration: 1 }}
+    // whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+    // animate={{ rotate: [0, 60, 0], transition: { duration: 5}}}
+    // style={{ x: -200 }}
+    className='w-40 h-40 rounded-lg bg-blue-500'
+     /> */}
+     <Animation />
+      {/* <ButtonComponent /> */}
       {/* <motion.div
         id="scroll-indicator"
         style={{
@@ -34,7 +46,7 @@ const HomePage = () => {
       />
 
       <Content /> */}
-    </>
+    </div>
   )
 }
 
