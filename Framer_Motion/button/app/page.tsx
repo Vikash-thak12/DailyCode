@@ -2,14 +2,16 @@
 // import ButtonComponent from '@/components/ButtonComponent'
 // import Content from '@/components/Content'
 import React from 'react'
-// import { motion } from 'motion/react'
+import { motion } from 'motion/react'
 import Animation from '@/components/Animation'
+import Parallex from '@/components/Parallex'
 // import { motion, useScroll } from "motion/react"
 
 const HomePage = () => {
-  // const { scrollYProgress } = useScroll();
+  
   return (
     <div className='h-screen w-full flex items-center justify-center bg-black text-white'>
+      <Parallex />
     {/* <motion.div
       // initial={{ transform: "translateX(-100px)" }}
       // animate={{ transform: "translateX(0px)" }}
@@ -19,7 +21,8 @@ const HomePage = () => {
     // style={{ x: -200 }}
     className='w-40 h-40 rounded-lg bg-blue-500'
      /> */}
-     <Animation />
+
+     {/* <Animation /> */}
       {/* <ButtonComponent /> */}
       {/* <motion.div
         id="scroll-indicator"
