@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils'
 import { Icon24Hours, Icon360View, Icon3dCubeSphere, IconMessage, IconX } from '@tabler/icons-react'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "motion/react"
 
 const HoverComponent = () => {
     return (
@@ -16,8 +17,26 @@ const HoverComponent = () => {
                 </button>
             </div>
 
+
             <div className='bg-gray-100 flex-1 mt-4 rounded-lg border border-dashed border-neutral-200 relative'>
-                <div className='absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200 overflow-hidden'>
+                {/* here motion will start */}
+                <motion.div
+                    initial={{
+                        opacity: 0,
+                        scale: 0.98,
+                        filter: "blur(10px)"
+                    }}
+                    whileHover={{
+                        opacity: 1,
+                        scale: 1.05,
+                        filter: "blur(0px)"
+                    }}
+
+                    transition={{
+                        duration: 0.5,
+                        ease: "easeInOut"
+                    }}
+                    className='absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200 overflow-hidden'>
 
                     {/* first one */}
                     <div className='flex gap-2 p-4'>
@@ -61,7 +80,7 @@ const HoverComponent = () => {
                                 Rotate up to 360
                             </p>
                             <p className='text-neutral-400 text-[10px] mt-1'>
-                                Nothing just having 360 rotattion 
+                                Nothing just having 360 rotattion
                             </p>
                         </div>
                     </div>
@@ -74,14 +93,14 @@ const HoverComponent = () => {
                         </div>
                         <div className='flex flex-col'>
                             <p className='text-[12px] font-bold text-neutral-600'>
-                                Icon with Cube 
+                                Icon with Cube
                             </p>
                             <p className='text-neutral-400 text-[10px] mt-1'>
                                 Here the icon with cube again
                             </p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )
