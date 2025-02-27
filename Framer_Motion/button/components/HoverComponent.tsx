@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const HoverComponent = () => {
     return (
-        <div className={cn("w-72 min-h-[26rem] h-[30rem] rounded-xl bg-gray-50 p-4 flex flex-col", "shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]")}>
+        <div className={cn("w-80 min-h-[26rem] h-[30rem] rounded-xl bg-gray-50 p-4 flex flex-col", "shadow-[0_1px_1px_rgba(0,0,0,0.05),0_4px_6px_rgba(34,42,53,0.04),0_24px_68px_rgba(47,48,55,0.05),0_2px_3px_rgba(0,0,0,0.04)]")}>
             <h2 className='font-bold text-[15px]'>Accertinity UI</h2>
             <p className='text-neutral-600 text-[12px] mt-2'>Welcome to this webpage where you can create the amazing cards</p>
             <div className="flex items-center justify-center">
@@ -33,10 +33,10 @@ const HoverComponent = () => {
                     }}
 
                     transition={{
-                        duration: 0.5,
+                        duration: 0.3,
                         ease: "easeInOut"
                     }}
-                    className='absolute inset-0 h-full w-full bg-white rounded-lg divide-y divide-neutral-200 overflow-hidden'>
+                    className='absolute inset-0 h-full w-full bg-gray-300 rounded-lg divide-y divide-neutral-200 overflow-hidden'>
 
                     {/* first one */}
                     <div className='flex gap-2 p-4'>
